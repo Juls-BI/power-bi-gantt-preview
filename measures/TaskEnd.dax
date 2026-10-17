@@ -1,0 +1,7 @@
+// End date for the Gantt visual's End field.
+// The visual draws a milestone only when End is blank, so return blank for milestones.
+TaskEnd =
+IF (
+    SELECTEDVALUE ( Schedule[Type] ) <> "Milestone",
+    MAX ( Schedule[EndDate] )
+)

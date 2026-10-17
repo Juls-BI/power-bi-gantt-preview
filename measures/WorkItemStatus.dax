@@ -1,0 +1,8 @@
+// Status for the Gantt visual's Columns field.
+// Columns behave like a matrix, so show the status only at work-item level,
+// not on Project or Phase rows.
+WorkItemStatus =
+IF (
+    ISINSCOPE ( Schedule[WorkItem] ),
+    SELECTEDVALUE ( Schedule[Status] )
+)

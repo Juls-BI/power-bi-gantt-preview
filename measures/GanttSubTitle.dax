@@ -1,0 +1,22 @@
+// Dynamic subtitle: number of items at risk and the next upcoming milestone.
+// Use it in Format visual > Title > Subtitle > Text > fx.
+GanttSubTitle =
+VAR AtRisk =
+    CALCULATE ( COUNTROWS ( Schedule ), Schedule[Status] = "At risk" )
+VAR NextMilestone =
+    CALCULATE (
+        MIN ( Schedule[StartDate] ),
+        Schedule[Type] = "Milestone",
+        Schedule[StartDate] >= TODAY ()
+    )
+RETURN
+    "Project Timeline: "
+        & IF (
+            AtRisk > 0,
+            AtRisk & " item" & IF ( AtRisk > 1, "s", "" ) & " at risk",
+            "all on track"
+        )
+        & IF (
+            NOT ISBLANK ( NextMilestone ),
+            " · Next milestone " & FORMAT ( NextMilestone, "d mmm" )
+        )
