@@ -1,0 +1,26 @@
+TaskID,Project,Phase,WorkItem,Type,Owner,StartDate,EndDate,DurationDays,Progress,Status,DependsOn
+1,Sales Dashboard Revamp,Discovery,Stakeholder interviews,Task,Ana,2026-09-07,2026-09-17,10,1.0,Done,
+2,Sales Dashboard Revamp,Discovery,Audit existing reports,Task,Ben,2026-09-09,2026-09-17,8,1.0,Done,
+3,Sales Dashboard Revamp,Discovery,Requirements sign-off,Milestone,Ana,2026-09-21,2026-09-21,0,1.0,Done,1;2
+4,Sales Dashboard Revamp,Data,Source system mapping,Task,Chloe,2026-09-22,2026-09-29,7,1.0,Done,3
+5,Sales Dashboard Revamp,Data,Build semantic model,Task,Chloe,2026-09-29,2026-10-14,15,1.0,Done,4
+6,Sales Dashboard Revamp,Data,DAX measures,Task,Dev,2026-10-08,2026-10-20,12,0.75,At risk,5
+7,Sales Dashboard Revamp,Data,Row-level security,Task,Dev,2026-10-19,2026-10-24,5,0.0,Not started,5
+8,Sales Dashboard Revamp,Design,Wireframes,Task,Ben,2026-09-28,2026-10-04,6,1.0,Done,3
+9,Sales Dashboard Revamp,Design,Accessibility review (WCAG),Task,Ben,2026-10-06,2026-10-11,5,1.0,Done,8
+10,Sales Dashboard Revamp,Design,Theme and colour palette,Task,Ana,2026-10-12,2026-10-18,6,0.85,In progress,9
+11,Sales Dashboard Revamp,Build,Executive overview page,Task,Dev,2026-10-20,2026-10-28,8,0.0,Not started,6;10
+12,Sales Dashboard Revamp,Build,Regional drill-through,Task,Chloe,2026-10-26,2026-11-04,9,0.0,Not started,11
+13,Sales Dashboard Revamp,Build,Mobile layout,Task,Ben,2026-11-04,2026-11-09,5,0.0,Not started,11
+14,Sales Dashboard Revamp,Testing,User acceptance testing,Task,Ana,2026-11-09,2026-11-19,10,0.0,Not started,12;13
+15,Sales Dashboard Revamp,Testing,PBIX Ally accessibility check,Task,Ben,2026-11-16,2026-11-19,3,0.0,Not started,13
+16,Sales Dashboard Revamp,Release,Go-live,Milestone,Ana,2026-11-23,2026-11-23,0,0.0,Not started,14;15
+17,Conference Talk Prep,Research,Read up on Aristotle's rhetoric,Task,Juli,2026-09-14,2026-09-24,10,1.0,Done,
+18,Conference Talk Prep,Research,Collect dashboard examples,Task,Juli,2026-09-21,2026-10-03,12,1.0,Done,
+19,Conference Talk Prep,Writing,Session abstract,Task,Juli,2026-10-05,2026-10-09,4,1.0,Done,17
+20,Conference Talk Prep,Writing,Abstract submitted,Milestone,Juli,2026-10-09,2026-10-09,0,1.0,Done,19
+21,Conference Talk Prep,Writing,Slide deck draft,Task,Juli,2026-10-12,2026-10-26,14,0.35,At risk,18;20
+22,Conference Talk Prep,Writing,AI agent prompting demo,Task,Juli,2026-10-19,2026-10-29,10,0.0,Not started,21
+23,Conference Talk Prep,Rehearsal,Dry run with team,Task,Juli,2026-11-02,2026-11-04,2,0.0,Not started,21;22
+24,Conference Talk Prep,Rehearsal,Final edits,Task,Juli,2026-11-04,2026-11-09,5,0.0,Not started,23
+25,Conference Talk Prep,Delivery,Conference day,Milestone,Juli,2026-11-12,2026-11-12,0,0.0,Not started,24

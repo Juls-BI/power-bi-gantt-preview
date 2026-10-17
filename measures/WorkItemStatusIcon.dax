@@ -1,0 +1,9 @@
+// Same as WorkItemStatus, with a warning icon after "At risk".
+// The visual has no conditional formatting for columns, so the icon is part of the text.
+WorkItemStatusIcon =
+VAR s = SELECTEDVALUE ( Schedule[Status] )
+RETURN
+    IF (
+        ISINSCOPE ( Schedule[WorkItem] ),
+        IF ( s = "At risk", s & " ⚠️", s )
+    )
