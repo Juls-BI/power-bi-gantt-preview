@@ -1,4 +1,9 @@
 # Power BI Gantt Visual (Preview): Sample and Workarounds
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)
+![DAX](https://img.shields.io/badge/DAX-measures-0078D4?style=flat)
+![Gantt visual](https://img.shields.io/badge/Gantt%20visual-preview-orange?style=flat)
+![Tested](https://img.shields.io/badge/tested-October%202026-lightgrey?style=flat)
+
 
 A sample report and dataset for trying the native [Gantt visual in Power BI](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-gantt), which is currently in preview. It includes the DAX measures I used to work around some of its current limitations.
 
