@@ -9,6 +9,8 @@ A sample report and dataset for trying the native [Gantt visual in Power BI](htt
 
 Tested in October 2026. Preview features change quickly, so some of these workarounds may no longer be needed.
 
+![Power BI Gantt visual (preview) showing the sample schedule grouped by project and phase, with task bars, milestone markers and an At risk status flag](images/GanttChartPreview.png)
+
 ## Download
 
 - **Just the report:** open [`report/NewGantt.pbix`](report/NewGantt.pbix) and select **Download raw file**.
@@ -21,6 +23,7 @@ You need an up-to-date version of [Power BI Desktop](https://www.microsoft.com/p
 | Folder | Contents |
 | --- | --- |
 | `data/` | `Schedule.csv`: dummy schedule with 25 work items across two projects |
+| `images/` | `GanttChartPreview.png`: screenshot of the sample report |
 | `measures/` | DAX measures used in the report, one file per measure |
 | `powerquery/` | `Calendar.pq`: optional calendar table built from the dataset's date range |
 | `report/` | `NewGantt.pbix`: the sample report |
