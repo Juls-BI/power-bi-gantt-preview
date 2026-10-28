@@ -88,3 +88,7 @@ Conditional formatting is available for the bars, but not for the fields in **Co
 - No conditional formatting on columns
 - Up to 1,000 rows and three grouping levels
 - No dependencies, critical path or float
+
+## See also
+
+[Project Controls Gantt](https://github.com/Juls-BI/project-controls-gantt) is a free custom visual I built to fill these gaps: baselines and variance, a cut-off line, predecessor and successor logic checks, total float and critical tasks, up to 6 grouping levels and up to 30,000 rows.
